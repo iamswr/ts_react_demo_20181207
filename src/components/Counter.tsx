@@ -2,7 +2,7 @@ import * as React from "react";
 // 引入connect，让组件和仓库建立连接
 import { connect } from "react-redux";
 // 引入actions，用于传给connect
-import actions from "../store/actions/couter";
+import actions from "../store/actions/counter";
 // 引入接口约束
 import { Store } from "../types";
 // 接口约束
@@ -33,7 +33,7 @@ class CounterComponent extends React.Component<IProps>{
 // connect第一次执行，需要两个参数，
 
 // 需要传给connect的函数
-let mapStateToProps = function (state:Store) {
+let mapStateToProps = function (state: Store): Store {
   return state
 }
 

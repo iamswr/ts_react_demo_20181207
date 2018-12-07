@@ -2,7 +2,7 @@
 // 用来约束state的
 import { Store } from "../../types/index"
 // 导入约束action的接口
-import { Action } from "../actions/couter"
+import { Action } from "../actions/counter"
 // 引入action动作行为的常量
 import * as types from "../action-types"
 // 我们需要给number赋予默认值
