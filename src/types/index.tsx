@@ -1,5 +1,10 @@
-// 导出一个接口
-export interface Store{
-  // 我们需要约束的属性和类型
-  number:number
+export interface Store {
+  counter: Counter,
+  counter2: Counter2
+}
+export interface Counter {
+  number: number
+}
+export interface Counter2 {
+  number: number
 }
