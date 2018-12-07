@@ -59,6 +59,10 @@ module.exports = {
     // 需要和插件webpack.HotModuleReplacementPlugin配合使用
     hot:true, 
     // 静态资源目录
-    contentBase:path.resolve(__dirname,'dist')
+    contentBase:path.resolve(__dirname,'dist'),
+    // 不管访问什么路径，都重定向到index.html
+    historyApiFallback:{
+      index:"./index.html"
+    }
   }
 }

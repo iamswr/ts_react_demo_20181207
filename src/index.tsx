@@ -6,7 +6,7 @@ import store from './store'
 // 路由的容器:HashRouter as Router
 // 路由的规格:Route
 // Link组件
-import { HashRouter as Router,Route,Link } from "react-router-dom"
+import { BrowserRouter as Router,Route,Link } from "react-router-dom"
 import CounterComponent from "./components/Counter";
 import CounterComponent2 from "./components/Counter2";
 import Counter from "./components/Counter";
