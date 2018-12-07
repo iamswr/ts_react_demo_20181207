@@ -1863,7 +1863,10 @@ ReactDom.render((
 
 完美，成功了，也可以看出`Counter` `Counter2`组件是互相独立的。  
 
-但是我们发现了一个问题，`http://localhost:8080/#/counter`中有个`#`的符号，非常不美观，那么我们如何变成`http://localhost:8080/counter`这样呢？  
+但是我们发现了一个问题，`http://localhost:8080/#/counter`中有个`#`的符号，非常不美观，那么我们如何变成`http://localhost:8080/counter`这样呢？ 
+
+> 这部分代码已传到 https://github.com/iamswr/ts_react_demo_20181207/tree/connected-react-router  
+> 分支：connected-react-router
 
 我们还是进入`./src/index.tsx`，
 
