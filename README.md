@@ -20,7 +20,7 @@
 
 网上有各种typescript和javascript的对比，那么在我的角度的理解，javascript是解释型（动态）语言，可以说是从上到下执行，在我们开发过程中，比如有语法错误等等，需要执行到这一行代码才能知道，而typescript则像写易语言那样生成exe时，需要静态编译，而静态编译这个过程，会把代码都检查一遍，看是否通过检测，最终才生成exe，typescript最终是也是编译成javascript原生代码的，只是在这个生成过程中，会进行各种检测，来检查代码是否符合语法啊规则啊，符合的话最终再编译成javascript，规范了我们代码的编写，同时也提高了代码的复用以及组件化，在runtime阶段为我们提前找到错误。
 
-![](https://user-gold-cdn.xitu.io/2018/12/3/167733f8bf6d4077?w=872&h=792&f=png&s=105477)
+![Alt text](./images/001.jpg)
 
 typescript支持es5/es6的语法，并且扩展了javascript语法，更像java、c#、swift这种语言了。
 
@@ -50,7 +50,7 @@ var = "邵威儒"
 
 首先我们在命令行执行`tsc --init`来生成配置文件，然后我们在目录下看到生成了一个`tsconfig.json`文件
 
-![](https://user-gold-cdn.xitu.io/2018/12/3/167733e76f5f8e8b?w=2750&h=1696&f=png&s=671665)
+![Alt text](./images/002.jpg)
 
 这个json文件里有很多选项
 - `target`是选择编译到什么语法
@@ -59,11 +59,11 @@ var = "邵威儒"
 
 接下来我们需要开启监控了，在vscode任务栏中
 
-![](https://user-gold-cdn.xitu.io/2018/12/3/1677345398b5958a?w=1308&h=638&f=png&s=413506)
+![Alt text](./images/003.jpg)
 
-![](https://user-gold-cdn.xitu.io/2018/12/3/1677345815c4b8d0?w=1038&h=274&f=png&s=37403)
+![Alt text](./images/004.jpg)
 
-![](https://user-gold-cdn.xitu.io/2018/12/3/1677345eda179951?w=768&h=192&f=png&s=22539)
+![Alt text](./images/005.jpg)
 
 此时就会开启监控了，会监听ts的变化，然后自动去编译。
 
@@ -232,7 +232,7 @@ btn.style.color = "blue";
 ```
 此时我们发现在ts中会报错
 
-![](https://user-gold-cdn.xitu.io/2018/12/4/16777fa621c378ed?w=672&h=168&f=png&s=25045)
+![Alt text](./images/006.jpg)
 
 因为我们取这个dom节点，有可能取到，也有可能没取到，当没取到的时候，相当于是null，是没有style这个属性的。
 
@@ -843,11 +843,11 @@ mymath.add("邵威儒")
 
 首先，我们生成一个目录`ts_react_demo`，输入`npm init -y`初始化项目  
 
-![](https://user-gold-cdn.xitu.io/2018/12/6/16781a0b69fd8f91?w=1166&h=770&f=png&s=307730)  
+![Alt text](./images/007.jpg)
 
 然后在项目里我们需要一个`.gitignore`来忽略指定目录不传到git上  
 
-![](https://user-gold-cdn.xitu.io/2018/12/6/16781a5b2af82999?w=1190&h=778&f=png&s=332163)
+![Alt text](./images/008.jpg)
 
 进入`.gitignore`输入我们需要忽略的目录，一般是`node_modules`
 ```
@@ -896,7 +896,7 @@ node_modules
 ```
 执行安装依赖包`npm i react react-dom @types/react @types/react-dom react-router-dom @types/react-router-dom react-redux @types/react-redux redux-thunk redux-logger @types/redux-logger connected-react-router -S`
 
-![](https://user-gold-cdn.xitu.io/2018/12/6/1678233d830ced4b?w=1172&h=758&f=png&s=383956)
+![Alt text](./images/009.jpg)
 
 #### webpack相关
 ```
@@ -907,7 +907,7 @@ node_modules
 ```
 执行安装依赖包`npm i webpack webpack-cli webpack-dev-server html-webpack-plugin -D`，这里的`-D`相当于`--save-dev`的缩写，下载开发环境的依赖包
 
-![](https://user-gold-cdn.xitu.io/2018/12/6/1678255d7360387b?w=1200&h=792&f=png&s=451793)
+![Alt text](./images/010.jpg)
 
 #### typescript相关
 ```
@@ -917,7 +917,7 @@ node_modules
 ```
 执行安装依赖包`npm i typescript ts-loader source-map-loader -D`
 
-![](https://user-gold-cdn.xitu.io/2018/12/6/167826d4387074ea?w=1168&h=756&f=png&s=403614)
+![Alt text](./images/011.jpg)
 
 从上面可以看出，基本都是模块和声明文件都是一对对出现的，有一些不是一对对出现，就是因为都集成到一起去了。
 
@@ -1096,7 +1096,7 @@ console.log("hello swr")
 npm run build
 ```
 
-![](https://user-gold-cdn.xitu.io/2018/12/6/167831dddf86abf9?w=1164&h=874&f=png&s=459147)
+![Alt text](./images/012.jpg)
 
 嗯，很好，编译成功了，我们可以看看`./dist/`下生成了`index.html` `index.js` `index.js.map`三个文件  
 
@@ -1106,7 +1106,7 @@ npm run build
 npm run dev
 ```
 
-![](https://user-gold-cdn.xitu.io/2018/12/6/167832293dcbd912?w=1670&h=1266&f=png&s=1082398)
+![Alt text](./images/013.jpg)
 
 这样就启动成功了一个`http://localhost:8080/`的服务了。  
 
@@ -1165,7 +1165,7 @@ ReactDom.render(<CounterComponent />,document.getElementById("app"))
 
 这样我们就把这个组件引进来了，接下来我们看下是否能够成功跑起来  
 
-![](https://user-gold-cdn.xitu.io/2018/12/7/16786b6e666a7d48?w=1258&h=746&f=png&s=115323)
+![Alt text](./images/014.jpg)
 
 到目前为止，感觉用ts写react还是跟以前差不多，没什么区别，要记住，ts最大的特点就是类型检查，可以检验属性的状态类型。  
 
@@ -1438,7 +1438,7 @@ export default connect(
 
 接下来我们看下是否配置成功  
 
-![](https://user-gold-cdn.xitu.io/2018/12/7/167878e5b814de83?w=902&h=744&f=png&s=96267)
+![Alt text](./images/014.jpg)
 
 成功了，可以通过加减按钮对`number`进行控制  
 
@@ -1560,7 +1560,7 @@ export default connect(
 
 接下来到浏览器看看能否成功  
 
-![](https://user-gold-cdn.xitu.io/2018/12/7/16787b435b799c81?w=906&h=832&f=png&s=116895)
+![Alt text](./images/015.jpg)
 
 完美~ 能够正常执行
 
@@ -1577,7 +1577,7 @@ export default connect(
 
 首先我们把涉及到计数器组件的代码拷贝两份，因为改动太多了，可以在git上看，改动后的目录如图
 
-![](https://user-gold-cdn.xitu.io/2018/12/7/167884c7908ae5f6?w=418&h=960&f=png&s=92921)
+![Alt text](./images/016.jpg)
 
 首先我们新增`action`的动作行为类型，在`./src/store/action-types.tsx`
 
@@ -1802,7 +1802,7 @@ ReactDom.render((
 
 然后到浏览器看看效果~  
 
-![](https://user-gold-cdn.xitu.io/2018/12/7/16788764a9f98500?w=966&h=1080&f=png&s=106763)
+![Alt text](./images/017.jpg)
 
 完美，这样我们就处理完reducers的合并了，在这个过程中，通过ts的类型检测，我不再像以前那样，写一段代码，运行看看是否报错，再定位错误，而是根据ts在编辑器的报错信息，直接定位，修改，把错误扼杀在摇篮。
 
@@ -1859,7 +1859,7 @@ ReactDom.render((
 
 接下来看看路由是否配置成功
 
-![](https://user-gold-cdn.xitu.io/2018/12/7/1678899c73ec8d99?w=1148&h=992&f=png&s=152185)
+![Alt text](./images/018.jpg)
 
 完美，成功了，也可以看出`Counter` `Counter2`组件是互相独立的。  
 
@@ -1874,11 +1874,11 @@ ReactDom.render((
 
 再从浏览器访问`http://localhost:8080/`再跳转到`http://localhost:8080/counter`发现还是很完美  
 
-![](https://user-gold-cdn.xitu.io/2018/12/7/16788a1f2351b4f8?w=1012&h=634&f=png&s=44992)
+![Alt text](./images/019.jpg)
 
 但是有个很大的问题，就是我们直接访问`http://localhost:8080/counter`会找不到路由
 
-![](https://user-gold-cdn.xitu.io/2018/12/7/16788a298fa3080b?w=986&h=424&f=png&s=25718)
+![Alt text](./images/020.jpg)
 
 这是怎么回事？因为我们的是单页面应用，不管路由怎么变更，实际上都是访问`index.html`这个文件，所以当我们访问根路径的时候，能够正常访问，因为`index.html`文件就放在这个目录下，但是当我们通过非根路径的路由访问，则出错了，是因为我们在相应的路径没有这个文件，所以出错了。  
 
@@ -1910,7 +1910,7 @@ ReactDom.render((
 
 修改`webpack`配置需要重启服务，然后重启服务，看看浏览器能否正常访问`http://localhost:8080/counter`
 
-![](https://user-gold-cdn.xitu.io/2018/12/7/16788ab45ae80458?w=1198&h=624&f=png&s=60260)
+![Alt text](./images/021.jpg)
 
 完美，不管访问什么路径，都能够正常重定向到`index.html`了
 
